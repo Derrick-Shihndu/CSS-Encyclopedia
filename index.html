@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Encyclopedia</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--HEADER-->
+<header class="site-header">
+    <h1>CSS Encyclopedia</h1>
+    <p>One project to explore almost every css property</p>
+</header>
+
+<!--NAVIGATION-->
+<nav class="site-nav">
+    <a href="#layout">Layout</a>
+    <a href="#typography">Typography</a>
+    <a href="#box-model">Box Model</a>
+    <a href="#backgrounds">Backgrounds</a>
+    <a href="#media">Media</a>
+    <a href="#Interaction">Interaction</a>
+    <a href="#animations">Animations</a>
+    <a href="#effects">Effects</a>
+    <a href="#responsive">Responsive</a>
+    <a href="#logic">CSS Logic</a>
+    <button class="theme-toggle" id="themeToggle">
+  🌙 Dark Mode
+</button>
+
+</nav>
+
+<!--MAIN CONTENT-->
+<main>
+
+    <!-- Layout Zone-->
+    <!-- <section id="layout" class="section">
+        <h2>Layout Zone</h2>
+        <div class="layout-demo">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section> -->
+    <!-- 2. BOX MODEL LAB -->
+    <section id="box-model" class="section">
+        <h2>Box Model Lab</h2>
+        <div class="box-model-demo">
+            <div class="box-model-box">Content Box</div>
+        </div>
+    </section>
+
+    <!-- 3. TYPOGRAPHY STUDIO -->
+    <section id="typography" class="section">
+        <h2>Typography Studio</h2>
+        <p class="text-sample">The quick brown fox jumps over the lazy dog.</p>
+        <p class="text-sample emphasis">Typography styling example</p>
+    </section>
+
+    <!-- 4. COLOR & BACKGROUND ROOM -->
+    <section id="backgrounds" class="section">
+        <h2>Color & Background Room</h2>
+        <div class="background-demo">Background Demo Box</div>
+    </section>
+
+    <!-- 5. IMAGE & MEDIA ZONE -->
+    <section id="media" class="section moving-background">
+        <h2>Image & Media Zone</h2>
+
+        <div class="image-wrapper moving-chain">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg" alt="Mountain" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="Lion" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Honeybee_on_flower.jpg" alt="Bee" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Cattle_tyrant_%28Machetornis_rixosa%29_on_Capybara.jpg" alt="Cattle tyrant (Machetornis rixosa) on Capybara" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Raft_spider_%28Dolomedes_cf_fimbriatus_%28Pisauridae%29%29.jpg" alt="Nursery web spider" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Blue_morpho_butterfly.jpg" alt="Butterfly" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Brown_thrasher_in_CP_%2802147%29.jpg" alt="thrasher" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Yellow-headed_caracara_%28Milvago_chimachima%29_on_capybara_%28Hydrochoeris_hydrochaeris%29.JPG" alt="Yellow-headed caracara (Milvago chimachima) on capybara (Hydrochoeris hydrochaeris)" class="demo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Canada_goose_flight_cropped_and_NR.jpg" alt="Canada goose flight cropped and NR" class="demo-image">
+        </div>
+    </section>
+
+
+    <!-- 6. INTERACTION PLAYGROUND -->
+    <section id="interaction" class="section">
+        <h2>Interaction Playground</h2>
+        <button class="btn">Hover Me!</button>
+        <input type="text" placeholder="Focus me">
+        <label>
+            <input type="checkbox"> Check me
+        </label>
+    </section>
+
+    <!--7. ANIMATION & MOTION LAB -->
+    <section id="animation" class="section">
+        <h2>Animation & Motion Lab</h2>
+        <div class="animation-box">Animated Box</div>
+    </section>
+
+    <!--8. EFFECTS & MODERN CSS -->
+    <section id="effects" class="section">
+        <h2>Effects & Modern CSS</h2>
+        <div class="effects-card">Glass / Shadow / Filter Effects</div>
+    </section>
+
+    <!-- 9. RESPONSIVE ZONE -->
+    <section id="responsive" class="section responsive-zone">
+    <h2>Responsive Zone</h2>
+
+    <div class="circle-container">
+        <div class="circle">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 10. CSS LOGIC & VARIABLES-->
+    <section id="logic" class="section">
+        <h2>CSS Logic & Architecture</h2>
+        <div class="logic-demo">
+            Uses variables, calc(), layers, supports
+        </div>
+    </section>
+    </main>
+    <!-- Glassmorphism Section -->
+     <section id="glass" class="section glass-zone">
+    <h2>Glassmorphism Zone</h2>
+
+    <div class="glass-grid">
+        <div class="glass-card">
+            <h3>Blur</h3>
+            <p>Creates a frosted glass effect.</p>
+        </div>
+
+        <div class="glass-card">
+            <h3>Transparency</h3>
+            <p>Uses RGBA colors to see through.</p>
+        </div>
+
+        <div class="glass-card">
+            <h3>Depth</h3>
+            <p>Shadows create separation.</p>
+        </div>
+    </div>
+</section>
+<!-- Scroll & Snap Zone -->
+    <section id="scroll" class="section scroll-zone">
+    <h2>Scroll & Snap Zone</h2>
+
+    <div class="snap-container">
+        <div class="snap-panel">Panel One</div>
+        <div class="snap-panel">Panel Two</div>
+        <div class="snap-panel">Panel Three</div>
+        <div class="snap-panel">Panel Four</div>
+    </div>
+</section>
+<!-- Selector Playground -->
+ <section id="selectors" class="section selector-zone">
+    <h2>Advanced Selectors Playground</h2>
+
+    <ul class="selector-list">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ul>
+
+    <div class="card-group">
+        <div class="card">Card A</div>
+        <div class="card active">Card B (active)</div>
+        <div class="card">Card C</div>
+    </div>
+</section>
+
+    <!-- FOOTER-->
+    <footer class="site-footer">
+        <p>Derrick Shihundu is developing the CSS Encyclopedia, an interactive and visually engaging web project designed to showcase the full spectrum of modern CSS properties and techniques. This project serves as both a personal learning tool and a comprehensive reference for beginners and intermediate developers, combining practical examples, animations, responsive layouts, and advanced styling concepts such as glassmorphism, scroll snapping, and dark mode. Derrick’s goal is to deepen his understanding of CSS while creating an educational resource that demonstrates how design, interactivity, and responsive principles can be applied cohesively in real-world web development.</p>
+        <p><strong>@ROYAL EINEMT</strong></p>
+    </footer>
+
+    <script>
+  const toggle = document.getElementById("themeToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    toggle.textContent = document.body.classList.contains("dark")
+      ? "☀️ Light Mode"
+      : "🌙 Dark Mode";
+  });
+</script>
+
+
+</body>
+</html>
