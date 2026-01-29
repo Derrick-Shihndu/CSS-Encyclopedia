@@ -603,10 +603,50 @@ body:not(.dark) .responsive-zone {
 
 .circle {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 70vw;      /* 70% of screen width */
+    height: 70vw;     /* keep it square */
+    max-width: 300px; /* optional max size for desktop */
+    max-height: 300px;
     animation: rotateCircle 18s linear infinite;
 }
+
+
+@media (max-width: 600px) {
+    .circle {
+        width: 100%;
+        height: auto;
+        animation: none; /* stop rotation on small screens */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .circle .box {
+    position: absolute;
+    width: 15%;       /* relative to circle size */
+    height: 15%;
+    background: #60a5fa;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+}
+@media (max-width: 400px) {
+    .circle .box {
+        width: 60px;
+        height: 60px;
+        font-size: 0.8rem;
+    }
+}
+
 .box {
     position: absolute;
     width: 60px;
@@ -621,22 +661,18 @@ body:not(.dark) .responsive-zone {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .circle {
-        width: auto;
-        height: auto;
-        animation: none;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        animation: rotateCircle 25s linear infinite; /* slower for small screens */
     }
+}
+
 
     .box {
         position: static;
         width: 100%;
         height: 80px;
     }
-}
 
 body.dark .responsive-zone {
     background: #020617;
@@ -649,12 +685,12 @@ body.dark .box {
 
 
 /* Positioning around circle */
-.box:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
-.box:nth-child(2) { top: 25%; right: 0; transform: translateY(-50%); }
-.box:nth-child(3) { bottom: 25%; right: 0; transform: translateY(50%); }
-.box:nth-child(4) { bottom: 0; left: 50%; transform: translateX(-50%); }
-.box:nth-child(5) { bottom: 25%; left: 0; transform: translateY(50%); }
-.box:nth-child(6) { top: 25%; left: 0; transform: translateY(-50%); }
+.box:nth-child(1) { top: 0%; left: 50%; transform: translateX(-50%); }
+.box:nth-child(2) { top: 25%; right: 0%; transform: translateY(-50%); }
+.box:nth-child(3) { bottom: 25%; right: 0%; transform: translateY(50%); }
+.box:nth-child(4) { bottom: 0%; left: 50%; transform: translateX(-50%); }
+.box:nth-child(5) { bottom: 25%; left: 0%; transform: translateY(50%); }
+.box:nth-child(6) { top: 25%; left: 0%; transform: translateY(-50%); }
 
 @keyframes rotateCircle {
     from { transform: rotate(0deg); }
